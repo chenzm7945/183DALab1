@@ -1,0 +1,9 @@
+d4=5; d3=5; d2=5; d1=5;
+Ang3=3.1314/3; Ang2=3.1314/4;
+
+cTd=[1 0 0 0;0 1 0 0;0 0 -1 d4;0 0 0 1]
+bTc=[cos(Ang3) sin(Ang3) 0 d3;-sin(Ang3) cos(Ang3) 0 0;0 0 1 0;0 0 0 1]
+aTb=[cos(Ang2) -sin(Ang2) 0 d2;sin(Ang2) cos(Ang2) 0 0;0 0 1 0;0 0 0 1]
+oTa=[1 0 0 0;0 1 0 0;0 0 1 d1;0 0 0 1]
+
+oTd=oTa*aTb*bTc*cTd
